@@ -2,7 +2,7 @@
 
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)](https://pytorch.org/)
 
-This repository contains a PyTorch implementation of **Proximal Policy Optimization (PPO)** used to solve the multi-agent Unity Reacher environment. This project is part of the Udacity Deep Reinforcement Learning Nanodegree.
+This repository contains a PyTorch implementation of **Proximal Policy Optimization (PPO)** used to solve the multi-agent Unity Reacher environment. 
 
 ## The Environment
 
