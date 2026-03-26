@@ -1,6 +1,5 @@
 # Proximal Policy Optimization (PPO) - Continuous Control
 
-[![Udacity - Deep Reinforcement Learning Nanodegree](https://img.shields.io/badge/Udacity-Deep%20RL-blue.svg)](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893)
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)](https://pytorch.org/)
 
 This repository contains a PyTorch implementation of **Proximal Policy Optimization (PPO)** used to solve the multi-agent Unity Reacher environment. This project is part of the Udacity Deep Reinforcement Learning Nanodegree.
