@@ -89,8 +89,8 @@ class PPOAgent:
             for states, old_actions, old_log_probs, old_values, indices in self.memory.generate_batches(self.batch_size):
                 
                 # Fetch the advantages and returns specifically for this mini-batch
-                batch_advantages = advantages[indices]
-                batch_returns = returns[indices]
+                batch_advantages = advantages[indices].squeeze()
+                batch_returns = returns[indices].squeeze()
                 
                 # Evaluate the old actions using the NEW, currently updating network
                 _, new_log_probs, entropy = self.actor(states, old_actions)
