@@ -27,9 +27,10 @@ def train_ppo(n_episodes=300, max_t=1000):
         for t in range(max_t):
             # Ask the agent what to do
             actions, log_probs, values = agent.act(states)
+            clipped_actions = np.clip(actions, -1, 1)
             
             # Send actions to the Unity environment
-            env_info = env.step(actions)[brain_name]
+            env_info = env.step(clipped_actions)[brain_name]
             next_states = env_info.vector_observations
             rewards = env_info.rewards
             dones = env_info.local_done
